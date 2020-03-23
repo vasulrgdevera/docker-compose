@@ -1,0 +1,8 @@
+snmp-exporter:
+  image: prom/snmp-exporter:master
+  volumes:
+  - ./conf/:/etc/snmp_exporter/
+  expose:
+  - 9116
+  ports:
+  - "127.0.0.1:9116:9116"
